@@ -1,38 +1,36 @@
-### Description
+#  Alief Muhammad Sugata — Portfolio
 
-A simple portfolio template for developer/designers built with React. 
+Personal portfolio website built with **React.js** to showcase my projects, skills, and experience in **Web Development** and **Cyber Security**.
 
-### [live preview](https://ubaimutl.github.io/react-portfolio/)
+## 🔗 Live Demo
+👉 https://alief-portfolio.vercel.app/
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+##  Preview
+![Portfolio Preview](./public/preview.png)
 
-### Features
+##  Tech Stack
+-  React (Create React App)
+-  CSS / Bootstrap
+-  React Router
+-  Typewriter Effect
+-  Deployed on Vercel
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
+## Features
+- Responsive modern UI
+- Portfolio gallery with popup detail
+- Dynamic content from single config file
+- SEO friendly with React Helmet
+- Fast deployment with Vercel
 
-### Setup
+##  About Me
+I am an Informatics Engineering student at **Politeknik Manufaktur Bandung** with a strong interest in **Web Development** and **Cyber Security**.
 
-Get the code
+I enjoy building clean, functional applications and continuously learning about system security and modern technologies.
 
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
+##  Contact
+- Email: aliefmuhammad916@gmail.com
+- LinkedIn: https://www.linkedin.com/in/aliefmuhammadsugata/
+- GitHub: https://github.com/Lief404
 
-<pre>yarn install</pre>
-
-
-Start the server
-
-<pre>yarn start</pre>
-
-### More
-
-Modify pages content in  `src/content_option.js`.
-
-### Thanks
-
-If you like this portfolio template don't forget give it a ⭐ 
+##  License
+This project is licensed under the MIT License.
