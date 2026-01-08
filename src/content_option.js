@@ -1,144 +1,150 @@
-const logotext = "JOHN";
+import bg from "./assets/images/img.png";
+import cmms1 from "./assets/images/cmms1.png";
+import cmms2 from "./assets/images/cmms2.png";
+import mes1 from "./assets/images/MES1.jpg";
+import mes2 from "./assets/images/MES2.png";
+import ubuntu1 from "./assets/images/ubuntu1.png";
+import ubuntu2 from "./assets/images/ubuntu2.png";
+import ML1 from "./assets/images/ML1.png";
+import ML2 from "./assets/images/ML2.png";
+
+const logotext = "Alief";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Alief Muhammad Sugata",
+    description: "I’m Alief Muhammad Sugata Undergraduate student at Bandung Politechnic of Manufacturing, majoring in Informatics Engineering.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Alief Muhammad Sugata",
     animated: {
         first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        second: "I code cool and functional websites",
+        third: "I learn Cyber Security",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Undergraduate student at Bandung Politechnic of Manufacturing, majoring in Informatics Engineering.",
+    your_img_url: bg, // ✅ PAKAI VARIABEL IMPORT
 };
 
+
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "a bit about my self",
+    aboutme: "I am an Automation Engineering student with Informatics study program at Politeknik Manufaktur Bandung with a strong interest in IT and Cybersecurity. I have hands-on experience in system security, application development, and Linux-based environments, and I am committed to continuous learning and professional growth in the IT industry.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Automation Engineering Student",
+        where: "Politeknik Manufaktur Bandung",
+        date: "2022 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Head of Internal Subdivision",
+        where: "HIMAMO - POLMAN BANDUNG",
+        date: "2025 - Present",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Media & Information Specialist",
+        where: "BEM KM POLMAN BANDUNG",
+        date: "2024 - Present",
+    },
+    {
+        jobtitle: "Member (Web Development)",
+        where: "Google Developer Student Clubs (GDSC) ITB",
+        date: "2023 - Present",
     },
 ];
 
 const skills = [{
         name: "Python",
-        value: 90,
+        value: 70,
     },
     {
-        name: "Djano",
-        value: 85,
+        name: "Django",
+        value: 65,
+    },
+    {
+        name: "Linux",
+        value: 70,
     },
     {
         name: "Javascript",
-        value: 80,
+        value: 65,
     },
     {
         name: "React",
-        value: 60,
+        value: 75,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "MySQL",
+        value: 80,
+    },
+    {
+        name: "MongoDB",
+        value: 75,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Web Development",
+        description: "Building responsive and secure web applications with a focus on clean architecture, usability, and performance.",
     },
     {
         title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "Developing functional and user-focused mobile applications with attention to performance, usability, and system integration.",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Cyber Security",
+        description: "applying security principles to identify vulnerabilities, improve access control, and enhance system and application security.",
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+const dataportfolio = [
+  {
+    coverImg: cmms2,
+    popupImg: cmms1,
+    title: "Computerized Maintenance Management System",
+    shortDesc: "CMMS for industrial automation",
+    description:
+      "Sistem Computerized Maintenance Management System (CMMS) modern berbasis web untuk industri otomasi dengan pendekatan Lean Maintenance dan Role-Based Access Control (RBAC) yang aman, realistis, dan siap produksi.",
+    tech: ["Next.js", "Flask", "MongoDB", "RBAC", "tailwind css"],
+    link: "https://github.com/Lief404/CMMS-INDUSTRI-OTOMASI",
+  },
+  {
+    coverImg: mes1,
+    popupImg: mes2,
+    title: "Manufature Execution System Monitoring Dashboard",
+    shortDesc: "Real-time MES monitoring",
+    description:
+      "Sistem monitoring alat MES yang berupa smart conveyor, dashboard menggunakan broker MQTT (bisa atur manual dan auto dari dashboard) dan firebase realtime database.",
+    tech: ["Python", "Firebase", "hiveMQ", "MQTT"],
+    link: "#",
+  },
+  {
+    coverImg: ubuntu1,
+    popupImg: ubuntu2,
+    title: "Network Server using Ubuntu Server",
+    shortDesc: "Implementasi DNS, Web, dan Mail Server dalam satu jaringan.",
+    description:
+      "Implementasi Ubuntu Server sebagai DNS, Web, dan Mail Server untuk menyediakan akses domain web.tjm.local dan mail.tjm.local bagi seluruh perangkat dalam jaringan.",
+    tech: ["Ubuntu Server", "Linux", "Apache", "BIND9", "Roundcube", "Networking"],
+    link: "#",
+  },
+  {
+    coverImg: ML1,
+    popupImg: ML2,
+    title: "Deteksi Badge Nama Seragam Praktikum Saat Apel Masuk dan Pulang Menggunakan YOLO dan Algoritma Machine Learning serta Labeling Roboflow",
+    shortDesc: "Sistem deteksi bet nama berbasis YOLO",
+    description:
+      "Sistem deteksi bet nama praktikum menggunakan YOLO dan Flask yang memanfaatkan kamera realtime untuk memastikan kelengkapan atribut praktikan. Data hasil deteksi dikirim ke backend PHP dan disimpan ke database untuk monitoring dan evaluasi.",
+    tech: ["Python", "YOLOv8", "Flask", "Docker", "PHP", "MySQL", "Roboflow"],
+    link: "#",
+  },
 ];
+
+
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "aliefmuhammad916@gmail.com",
+    YOUR_FONE: "(+62)81809299840",
+    description: "Tertarik untuk mengembangkan solusi industri atau memiliki proyek digital? Jangan ragu untuk menghubungi saya. Mari ciptakan sesuatu yang hebat bersama.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,10 +153,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    github: "https://github.com/Lief404",
+    linkedin: "https://www.linkedin.com/in/aliefmuhammadsugata/",
 };
 export {
     meta,
