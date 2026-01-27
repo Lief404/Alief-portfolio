@@ -1,0 +1,210 @@
+/* =========================
+   PORTFOLIO GRID
+========================= */
+
+.po_items_ho {
+    column-width: 16em;
+    column-gap: 3rem;
+}
+
+.po_item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
+    background: var(--secondary-color);
+    padding: 6px;
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    position: relative;
+
+    /* FIX COVER RATIO */
+    aspect-ratio: 4 / 5; /* 400 / 500 */
+}
+
+.po_item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover; /* KUNCI UTAMA */
+    transition: transform 0.5s ease;
+}
+
+.po_item:hover img {
+    transform: scale(1.08);
+}
+
+.po_item:hover {
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   HOVER OVERLAY
+========================= */
+
+.po_item .content {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.75)
+    );
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 22px;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+.po_item:hover .content {
+    opacity: 1;
+}
+
+.po_item .content p {
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    max-width: 90%;
+}
+
+.view_more {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    transition: 0.3s ease;
+}
+
+.view_more:hover {
+    border-color: #fff;
+}
+
+/* =========================
+   MODAL STYLE (MINIMAL & CLEAN)
+========================= */
+
+.portfolio-modal .modal-content {
+    background: var(--bg-color);
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-modal .modal-header {
+    border-bottom: none;
+    padding: 1.6rem 1.6rem 0;
+}
+
+.portfolio-modal .modal-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.portfolio-modal .btn-close {
+    filter: invert(1);
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+.portfolio-modal .btn-close:hover {
+    opacity: 1;
+}
+
+/* =========================
+   MODAL CONTENT
+========================= */
+
+.portfolio-modal .modal-body {
+    padding: 1.6rem;
+}
+
+.modal-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1.4rem;
+    object-fit: cover;
+}
+
+.modal-desc {
+    color: var(--text-color);
+    line-height: 1.75;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   MODAL BUTTONS
+========================= */
+
+.portfolio-modal .modal-footer {
+    border-top: none;
+    padding: 0 1.6rem 1.6rem;
+    justify-content: space-between;
+}
+
+.portfolio-modal .btn-primary {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 7px 20px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.portfolio-modal .btn-primary:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.portfolio-modal .btn-secondary {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.portfolio-modal .btn-secondary:hover {
+    opacity: 1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .po_items_ho {
+        column-gap: 1.4rem;
+    }
+
+    .po_item {
+        border-radius: 12px;
+    }
+}
+
+.modal-tech {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-badge {
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
+  opacity: 0.85;
+}
