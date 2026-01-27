@@ -7,6 +7,9 @@ import ubuntu1 from "./assets/images/ubuntu1.png";
 import ubuntu2 from "./assets/images/ubuntu2.png";
 import ML1 from "./assets/images/ML1.png";
 import ML2 from "./assets/images/ML2.png";
+import AI1 from "./assets/images/AI1.png";
+import AI2 from "./assets/images/AI2.png";
+
 
 const logotext = "Alief";
 const meta = {
@@ -135,6 +138,16 @@ const dataportfolio = [
     description:
       "Sistem deteksi bet nama praktikum menggunakan YOLO dan Flask yang memanfaatkan kamera realtime untuk memastikan kelengkapan atribut praktikan. Data hasil deteksi dikirim ke backend PHP dan disimpan ke database untuk monitoring dan evaluasi.",
     tech: ["Python", "YOLOv8", "Flask", "Docker", "PHP", "MySQL", "Roboflow"],
+    link: "#",
+  },
+  {
+    coverImg: AI1,
+    popupImg: AI2,
+    title: "Analisis Prediksi menggunakan Algoritma Machine Learning naive bayes dan decision tree",
+    shortDesc: "Sistem prediksi berbasis Machine Learning",
+    description:
+      "Sistem prediksi menggunakan algoritma Machine Learning naive bayes dan decision tree untuk menganalisis data dan memberikan prediksi yang akurat berdasarkan pola yang ditemukan dalam dataset.",
+    tech: ["Python", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "naive bayes", "decision tree"],
     link: "#",
   },
 ];
